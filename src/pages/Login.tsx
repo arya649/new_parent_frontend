@@ -1,4 +1,4 @@
-import { useState, FormEvent } from 'react'
+import { useState, type FormEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { GraduationCap, Eye, EyeOff } from 'lucide-react'
 import { login } from '../api/parentApi'

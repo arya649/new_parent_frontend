@@ -12,7 +12,8 @@
       "Bash(netstat:*)",
       "Bash(ss:*)",
       "Bash(lsof:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(npx vite build:*)"
     ]
   }
 }

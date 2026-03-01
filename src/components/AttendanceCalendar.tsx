@@ -7,7 +7,6 @@ import {
   getDay,
   isSameMonth,
   isToday,
-  parseISO,
 } from 'date-fns'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import type { AttendanceRecord, AttendanceStatus } from '../types'

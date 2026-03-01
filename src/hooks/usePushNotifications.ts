@@ -86,7 +86,7 @@ export function usePushNotifications() {
       // 3. Subscribe to push (this triggers the browser permission prompt)
       const subscription = await sw.pushManager.subscribe({
         userVisibleOnly: true,
-        applicationServerKey: vapidKeyToApplicationServerKey(vapidKey),
+        applicationServerKey: vapidKeyToApplicationServerKey(vapidKey).buffer as ArrayBuffer,
       })
 
       // 4. Send subscription to backend
