@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --color-brand: #16A34A;
+  --color-brand-light: #DCFCE7;
+  --color-brand-dark: #14532D;
+  --color-present: #16A34A;
+  --color-present-bg: #DCFCE7;
+  --color-present-text: #14532D;
+  --color-absent: #DC2626;
+  --color-absent-bg: #FEE2E2;
+  --color-absent-text: #7F1D1D;
+  --color-late: #D97706;
+  --color-late-bg: #FEF3C7;
+  --color-late-text: #78350F;
+  --color-surface: #FFFFFF;
+  --color-bg: #F0FDF4;
+  --color-border: #E2E8F0;
+  --color-text: #111827;
+  --color-muted: #6B7280;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #F0FDF4;
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn { animation: fadeIn 0.25s ease-out; }
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-slideUp { animation: slideUp 0.22s ease-out; }
+
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+.skeleton {
+  background: linear-gradient(90deg, #E5E7EB 25%, #F9FAF8 50%, #E5E7EB 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+  border-radius: 10px;
+}
