@@ -13,7 +13,13 @@
       "Bash(ss:*)",
       "Bash(lsof:*)",
       "Bash(curl:*)",
-      "Bash(npx vite build:*)"
+      "Bash(npx vite build:*)",
+      "Bash(node:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(gh repo list:*)",
+      "Bash(git config:*)"
     ]
   }
 }
